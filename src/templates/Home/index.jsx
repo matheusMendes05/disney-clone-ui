@@ -1,9 +1,9 @@
 import './styles.css';
-
+import { Heading } from '../../components/Heading';
 function Home() {
   return (
-    <div className="App">
-      <h1 className="">Hello word</h1>
+    <div className="home">
+      <Heading />
     </div>
   );
 }
