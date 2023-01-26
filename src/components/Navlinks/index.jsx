@@ -8,51 +8,51 @@ import TheatersIcon from '@material-ui/icons/Theaters';
 
 export const Navlinks = () => {
   return (
-    <ul className="flex items-center ml-20">
-      <li className="mr-8">
+    <ul className="flex items-center ml-20 navlist">
+      <li className="mr-6">
         <a href="#">
           <span>
-            <HomeIcon />
+            <HomeIcon className="icons" />
           </span>
           home
         </a>
       </li>
-      <li className="mr-8">
+      <li className="mr-6">
         <a href="#">
           <span>
-            <SearchIcon />
+            <SearchIcon className="icons" />
           </span>
           search
         </a>
       </li>
-      <li className="mr-8">
+      <li className="mr-6">
         <a href="#">
           <span>
-            <AddIcon />
+            <AddIcon className="icons" />
           </span>
           details
         </a>
       </li>
-      <li className="mr-8">
+      <li className="mr-6">
         <a href="#">
           <span>
-            <StartIcon />
+            <StartIcon className="icons" />
           </span>
           originals
         </a>
       </li>
-      <li className="mr-8">
+      <li className="mr-6">
         <a href="#">
           <span>
-            <TheatersIcon />
+            <TheatersIcon className="icons" />
           </span>
           movies
         </a>
       </li>
-      <li className="mr-8">
+      <li className="mr-6">
         <a href="#">
           <span>
-            <LiveTvIcon />
+            <LiveTvIcon className="icons" />
           </span>
           series
         </a>
