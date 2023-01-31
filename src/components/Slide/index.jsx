@@ -1,40 +1,35 @@
 import './styles.css';
-import { useContext, useEffect, useRef } from 'react';
-import { getTrendingMovies } from '../../context/TMDBContext/actions';
-import { TMDBContext } from '../../context/TMDBContext/context';
-
-import ArrowBackIosOutlined from '@material-ui/icons/ArrowBackIosOutlined';
-import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
-import { SlideImage } from '../SlideImage';
+import { Carousel } from 'flowbite-react/lib/esm/components/Carousel';
 
 export const Slide = () => {
-  const isMounted = useRef(true);
-  const tmdbContext = useContext(TMDBContext);
-  const { movieState, movieDispatch } = tmdbContext;
-
-  useEffect(() => {
-    getTrendingMovies(movieDispatch).then((dispatch) => {
-      if (!isMounted.current) {
-        dispatch();
-      }
-    });
-
-    return () => {
-      isMounted.current = false;
-    };
-  }, [movieDispatch]);
-
   return (
-    <div className="">
-      <h1>Carousel</h1>
+    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 mt-2">
+      <Carousel slideInterval={5000}>
+        <div className="flex h-full items-center justify-center">
+          <img
+            src="https://disneyplusbrasil.com.br/wp-content/uploads/2022/07/Vingadores-Guerra-Infinita-e-Ultimato.jpg"
+            alt=""
+            srcSet=""
+            className="img-carousel"
+          />
+        </div>
+        <div className="flex h-full items-center justify-center">
+          <img
+            src="https://disneyplusbrasil.com.br/wp-content/uploads/2022/08/Walt-Disney-Studios-Logo.jpg"
+            alt=""
+            srcSet=""
+            className="img-carousel"
+          />
+        </div>
+        <div className="flex h-full items-center justify-center">
+          <img
+            src="https://disneyplusbrasil.com.br/wp-content/uploads/2022/12/Especial-Avatar-2-Disney-Plus.jpg"
+            alt=""
+            srcSet=""
+            className="img-carousel"
+          />
+        </div>
+      </Carousel>
     </div>
   );
 };
-
-// {movieState.trendingMovies.map((movie) => (
-//     <img key={movie.id} src={process.env.REACT_APP_IMG + movie.backdrop_path} alt="" srcSet="" />
-//   ))}
-
-{
-  /* <img src="https://image.tmdb.org/t/p/w500/5kAGbi9MFAobQTVfK4kWPnIfnP0.jpg" alt="teste" /> */
-}

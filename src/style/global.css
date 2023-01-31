@@ -5,12 +5,21 @@
 /* Roboto fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700;900&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto';
-  background-color: #1E2442;
-  color: #FFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    background-color: #1E2442;
+    color: #FFFF;
+}
+
+.container-r {
+    margin: 5rem 4.65rem;
 }

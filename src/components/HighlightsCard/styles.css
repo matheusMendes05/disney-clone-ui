@@ -1,0 +1,30 @@
+.cards {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-body {
+    width: 12.8rem;
+    border: 3px solid #272A3D;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+   display: flex;
+   justify-content: center;
+}
+
+.card-body:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .card-body {
+        width: 20.8rem;
+
+    }
+}

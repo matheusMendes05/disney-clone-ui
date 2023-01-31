@@ -1,0 +1,11 @@
+.img-carousel {
+    width: 94% !important;
+    height: 131%;
+    border-radius: 10px !important;
+    position: absolute;
+    top: 5px;
+}
+
+#carousel-indicator {
+    display: none;
+}
